@@ -204,7 +204,7 @@
             <span class="text-xs text-yellow-600 text-center leading-tight mt-1">{{ $universityBooths['A2']['name'] }}</span>
         </a>
 
-        {{-- BLOK BAWAH (dekat pintu masuk) --}}
+        {{-- BLOK BAWAH (dekat pintu masuk) --}
         {{-- Booth A5 --}}
         <a href="{{ route('universities.show', $universityBooths['A5']['slug']) }}"
            class="col-start-5 row-start-8 flex flex-col items-center justify-center p-2 bg-teal-100 border border-teal-300 rounded-md shadow-sm hover:shadow-lg hover:border-teal-500 transition-all duration-200">
