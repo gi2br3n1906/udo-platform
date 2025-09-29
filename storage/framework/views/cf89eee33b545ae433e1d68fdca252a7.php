@@ -43,4 +43,4 @@
         <?php echo $__env->yieldPushContent('scripts'); ?>
     </body>
 </html>
-<?php /**PATH D:\Coding\UDO\udo-platform\resources\views/layouts/app.blade.php ENDPATH**/ ?>
+<?php /**PATH /var/www/udo-platform/resources/views/layouts/app.blade.php ENDPATH**/ ?>

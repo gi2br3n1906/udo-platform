@@ -107,4 +107,4 @@
     </div>
 
 </nav>
-<?php /**PATH D:\Coding\UDO\udo-platform\resources\views/layouts/navigation.blade.php ENDPATH**/ ?>
+<?php /**PATH /var/www/udo-platform/resources/views/layouts/navigation.blade.php ENDPATH**/ ?>

@@ -205,7 +205,6 @@
         </a>
 
         
-        
         <a href="<?php echo e(route('universities.show', $universityBooths['A5']['slug'])); ?>"
            class="col-start-5 row-start-8 flex flex-col items-center justify-center p-2 bg-teal-100 border border-teal-300 rounded-md shadow-sm hover:shadow-lg hover:border-teal-500 transition-all duration-200">
             <span class="font-bold text-sm text-teal-800">A5</span>
@@ -281,4 +280,4 @@
         </div>
     </div>
 </div>
-<?php /**PATH D:\Coding\UDO\udo-platform\resources\views/components/expo-floor-plan.blade.php ENDPATH**/ ?>
+<?php /**PATH /var/www/udo-platform/resources/views/components/expo-floor-plan.blade.php ENDPATH**/ ?>
