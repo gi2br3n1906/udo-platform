@@ -662,4 +662,4 @@
 <?php $component = $__componentOriginal9ac128a9029c0e4701924bd2d73d7f54; ?>
 <?php unset($__componentOriginal9ac128a9029c0e4701924bd2d73d7f54); ?>
 <?php endif; ?>
-<?php /**PATH D:\Coding\UDO\udo-platform\resources\views/universities/index.blade.php ENDPATH**/ ?>
+<?php /**PATH /var/www/udo-platform/resources/views/universities/index.blade.php ENDPATH**/ ?>
