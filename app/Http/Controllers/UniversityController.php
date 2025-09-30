@@ -12,7 +12,7 @@ class UniversityController extends Controller
     /**
      * Display the universities index page.
      */
-    public function index(): View
+    public function index(Request $request): View
     {
         $universities = University::all();
 
@@ -22,11 +22,17 @@ class UniversityController extends Controller
             $visitor = Visitor::with('favoriteUniversities')->find(session('visitor_id'));
         }
 
+        // Check if this is an AJAX request
+        if ($request->ajax()) {
+            // Return only the content part for AJAX
+            return response(view('universities.index', compact('universities', 'visitor'))->render());
+        }
+
         return view('universities.index', compact('universities', 'visitor'));
     }    /**
      * Display a specific university by slug.
      */
-    public function show(string $slug): View
+    public function show(Request $request, string $slug): View
     {
         // Find university by slug
         $university = University::where('slug', $slug)->firstOrFail();
@@ -40,6 +46,12 @@ class UniversityController extends Controller
             if ($visitor) {
                 $hasFavorited = $visitor->hasFavorited($university);
             }
+        }
+
+        // Check if this is an AJAX request
+        if ($request->ajax()) {
+            // Return only the content part for AJAX
+            return response(view('universities.show', compact('university', 'visitor', 'hasFavorited'))->render());
         }
 
         return view('universities.show', compact('university', 'visitor', 'hasFavorited'));
